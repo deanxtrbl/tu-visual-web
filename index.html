@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <link rel="icon" type="image/png" href="/sebavisual-icono.png" />
+    <link rel="apple-touch-icon" href="/sebavisual-icono.png" />
+    <title>Tu Visual — Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400&family=Noto+Sans+JP:wght@200;300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav>
+      <div class="logo">
+        <div class="logo-mark">
+          <img src="/sebavisual-icono.png" alt="Tu Visual" />
+        </div>
+        <span class="logo-name"><strong>Tu</strong> Visual</span>
+      </div>
+      <ul>
+        <li><a href="#reserva">Reservar</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">Est. 2012 — Santiago, Maipú</div>
+        <h1 id="hero-title">Tu corte.<br><em>Tu</em><br>identidad.</h1>
+        <p class="hero-p">
+          Especialistas en estilos coreanos y japoneses — cada corte, una declaración.
+        </p>
+        <a href="#reserva" class="cta">
+          <span>Reservar hora</span>
+          <span>→</span>
+        </a>
+      </div>
+
+      <div class="hero-strip">
+        <img src="/yochibi-mascota-gris.png" alt="Mascota Tu Visual" class="hero-strip-img" />
+        <span class="hero-strip-kanji">視</span>
+        <div class="hero-strip-rings">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="hero-strip-text">視覚 · TU VISUAL · 비주얼</span>
+      </div>
+    </section>
+
+    <div class="divider"><span>Reserva tu hora</span></div>
+
+    <!-- RESERVA -->
+    <section class="reserva" id="reserva">
+
+      <div class="res-left">
+        <h2>Elige<br />tu hora</h2>
+        <p>Selecciona el servicio y luego tu horario disponible.</p>
+        <div class="cinfo">
+        <div class="crow"><span class="clbl">Horario</span><span class="cval">Mar – Vie 11:00 – 20:00 | Sábado 11:00 – 17:00</span></div>
+          <div class="crow"><span class="clbl">Teléfono</span><a class="cval" href="https://wa.me/56976004162" target="_blank" rel="noopener noreferrer">+56 9 3746 0722</a></div>
+          <div class="crow"><span class="clbl">Dirección</span><a class="cval" href="https://maps.app.goo.gl/jtNHjcRJJCzcscBM6" target="_blank" rel="noopener noreferrer">El Olimpo 1790, Maipú</a></div>
+          <div class="crow"><span class="clbl">Instagram</span><a class="cval" href="https://www.instagram.com/tu.visual/" target="_blank" rel="noopener noreferrer">@tu.visual</a></div>
+        </div>
+      </div>
+
+      <div class="booking-block">
+
+        <div class="service-select">
+          <span class="schedule-label-main">Servicio</span>
+          <div class="service-tabs" id="serviceTabs">
+            <button class="service-tab active" data-url="https://calendly.com/tuvisual/30min">
+              Corte Tradicional
+              <small>~30 min</small>
+            </button>
+            <button class="service-tab" data-url="https://calendly.com/tuvisual/corte-alternativo">
+              Corte Alternativo
+              <small>1 hora</small>
+            </button>
+          </div>
+        </div>
+
+        <div class="calendly-wrap" id="calendlyWrap">
+          <div
+            class="calendly-inline-widget"
+            id="calendlyWidget"
+            data-url="https://calendly.com/tuvisual/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=f7f5f0&text_color=0c0c0b&primary_color=0c0c0b"
+            style="min-width:280px; height:780px;"
+          ></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="foot-logo">
+        <img src="/sebavisual-icono.png" alt="Tu Visual" />
+        <strong>Tu</strong>&nbsp;Visual
+      </div>
+      <span class="foot-copy">© 2026 Tu Visual · Santiago · developed x DΞΔN</span>
+      <ul class="foot-links">
+        <li><a href="https://www.instagram.com/tu.visual/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://wa.me/56976004162" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        <li><a href="https://maps.app.goo.gl/jtNHjcRJJCzcscBM6" target="_blank" rel="noopener noreferrer">Maps</a></li>
+      </ul>
+    </footer>
+
+    <script src="https://assets.calendly.com/assets/external/widget.js" defer></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
